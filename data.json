@@ -1,0 +1,42 @@
+{
+  "brand": {
+    "name": "荷塘月色",
+    "name_en": "He Tang Yue Se",
+    "slogan": "心安之处，月下荷塘",
+    "slogan_jp": "心安らぐ、月下の蓮池",
+    "intro": "「荷塘月色」坐落于大阪市中心繁华的岛之内（Shimanouchi），是一处融合了日式静谧与现代便利的都市休憩所。正如其名，我们致力于在喧嚣的城市核心，为您营造一份如月下荷塘般的宁静与优雅。无论是步行至心斋桥的繁华，还是在静谧的客房内小憩，这里都是您旅途中的属灵家园。秉持『一期一会』的待客之道，超哥在大阪，静候您的到来。"
+  },
+  "facility": {
+    "address": "2 Chome-2-5 Shimanouchi, Chuo Ward, Osaka, 542-0082",
+    "features": [
+      "配备电梯 · 舒适便捷",
+      "周边24小时全家便利店",
+      "大型烘干房 & 投币储物柜",
+      "高速 Wi-Fi & 全家电覆盖"
+    ],
+    "rooms": [
+      {
+        "type": "标准双人间 (1-4人)",
+        "bed": "1.4m * 2 双人床 x 1, 1.2m * 2 床双人床 x 1",
+        "amenities": "独立卫浴, 可做简餐, 冰箱, 洗衣机, 空调, 吹风机, 热水壶"
+      }
+    ]
+  },
+  "contact": {
+    "host": "超哥",
+    "phone": "090-3976-5678",
+    "douyin": "超哥在大阪",
+    "video_account": "超哥在大阪",
+    "platforms": ["Airbnb", "Booking", "Agoda", "携程"]
+  },
+  "assets": {
+    "hero_video": "assets/videos/hero.mp4",
+    "images": [
+      "assets/images/exterior.jpg",
+      "assets/images/room1.jpg",
+      "assets/images/room2.jpg",
+      "assets/images/facility1.jpg",
+      "assets/images/facility2.jpg"
+    ]
+  }
+}
