@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>荷塘月色 · 大阪岛之内官方网站</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', 'Noto Serif SC', serif; background-color: #FDFCF8; color: #1A2E44; }
+        .hero-text { text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        .section-title::after { content: ''; display: block; width: 40px; height: 2px; background: #C5A059; margin: 10px auto; }
+        .fade-in { animation: fadeIn 1.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Hero Video will be uploaded manually or referenced -->
+            <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-80">
+                <source src="assets/videos/hero.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        <div class="relative z-10 text-center text-white fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-widest hero-text">荷塘月色</h1>
+            <p class="text-xl md:text-2xl tracking-[0.5em] hero-text">心安之处 · 月下荷塘</p>
+            <div class="mt-12">
+                <a href="#about" class="border border-white px-8 py-3 hover:bg-white hover:text-black transition duration-300 tracking-widest">走进荷塘</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold section-title mb-12">关于我们</h2>
+        <p id="intro-text" class="text-lg leading-relaxed text-gray-700 mb-8">
+            「荷塘月色」坐落于大阪市中心繁华的岛之内（Shimanouchi），是一处融合了日式静谧与现代便利的都市休憩所。正如其名，我们致力于在喧嚣的城市核心，为您营造一份如月下荷塘般的宁静与优雅。无论您是寻求购物的便捷还是深度体验大阪的市井烟火，这里都是您旅途中的理想居所。
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+            <div class="p-4 border border-gray-100">
+                <span class="block text-2xl mb-2">🏢</span>
+                <span class="text-sm">电梯配置</span>
+            </div>
+            <div class="p-4 border border-gray-100">
+                <span class="block text-2xl mb-2">🏪</span>
+                <span class="text-sm">24H便利店</span>
+            </div>
+            <div class="p-4 border border-gray-100">
+                <span class="block text-2xl mb-2">🧺</span>
+                <span class="text-sm">烘干房</span>
+            </div>
+            <div class="p-4 border border-gray-100">
+                <span class="block text-2xl mb-2">📶</span>
+                <span class="text-sm">高速Wi-Fi</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Gallery -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold section-title text-center mb-16">房屋展示</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://sc01.alicdn.com/kf/Sf3c40b2c007045c58df14aa244eff17f0.jpg" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://sc01.alicdn.com/kf/S95de2fc569e048d09fc259b4893dfaf5o.jpg" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="aspect-square bg-gray-100 overflow-hidden">
+                    <img src="https://sc01.alicdn.com/kf/S6bcc966353f94e318c92a8b70c4f662aN.jpg" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="aspect-video bg-gray-100 overflow-hidden">
+                    <img src="https://sc01.alicdn.com/kf/S3e123e6204014a8c97ab21eaf30869afl.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-video bg-gray-100 overflow-hidden">
+                    <img src="https://sc01.alicdn.com/kf/Sb0505baf75cd4051bf2dd1a5e71a278co.jpg" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase -->
+    <section class="py-20 bg-[#FDFCF8]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold section-title mb-12">视频介绍</h2>
+            <div class="grid gap-8">
+                <div class="aspect-video bg-black shadow-xl">
+                    <video controls class="w-full h-full">
+                        <source src="assets/videos/intro.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="aspect-video bg-black shadow-xl">
+                    <video controls class="w-full h-full">
+                        <source src="assets/videos/exterior.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-8">地理位置</h2>
+                <p class="text-gray-600 mb-4">大阪市中央区島之内2丁目2-5</p>
+                <div class="h-80 bg-gray-200">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3926574929846!2d135.50548131523!3d34.67131898044237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e716f9478f77%3A0x6b86f9f3f00853fb!2zMiBDaG9tZS0yLTUgU2hpbWFub3VjaGksIENodW8gV2FyZCwgT3Nha2EsIDU0Mi0wMDgy!5e0!3m2!1sen!2sjp!4v1650000000000!5m2!1sen!2sjp" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-8">联络我们</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-8">
+                        <div class="text-center">
+                            <img src="https://sc01.alicdn.com/kf/S6365628807614c32b4ebba919dd21113G.png" class="w-32 h-32 mb-2">
+                            <p class="text-xs text-gray-500">抖音号</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="https://sc01.alicdn.com/kf/S1390e349c4c54f9ab85a2309f7a5798eE.png" class="w-32 h-32 mb-2">
+                            <p class="text-xs text-gray-500">微信/视频号</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase">咨询电话</p>
+                        <p class="text-xl">090-3976-5678 (超哥)</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase">社交媒体</p>
+                        <p class="text-lg">抖音/视频号/同名搜索：超哥在大阪</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500 uppercase">预定平台</p>
+                        <p class="text-lg">Airbnb / Booking / Agoda / 携程</p>
+                        <p class="text-xs text-gray-400 mt-1">搜索“荷塘月色”即可预定</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#1A2E44] text-white text-center">
+        <p class="tracking-widest mb-4">荷塘月色 · HE TANG YUE SE</p>
+        <p class="text-xs text-gray-400">© 2026 徽盛堂株式会社. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Future-proofing: simple script to fetch from data.json if needed
+        // For now, static for zero-latency performance.
+    </script>
+</body>
+</html>
